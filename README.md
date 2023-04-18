@@ -16,15 +16,16 @@
 ## 🕰️ 개발 기간
 * 23.04.18
 ## 📌 주요 기능
-<br>
-## 메인
-<img width="1131" alt="image" src="https://user-images.githubusercontent.com/89882525/232676659-b3408b50-0254-4fd3-b8a2-89c41d0571c0.png">
-<br>
-## 이미지 검색
-- 원하는 이미지를 검색 할 수 있습니다.
-- 이미지를 클릭하면 modal 로 뜨며 키워드 태그를 확인 할 수 있습니다.
-<img width="1131" alt="image" src="https://user-images.githubusercontent.com/89882525/232708657-605c4813-1502-417f-a449-25417174dec0.png">
-<br>
-## 그 외
-- styled-component 로 css 적용하였습니다.
-- 기능별 component 로 분리 하였습니다.
+* 메인
+  <br>
+  <img width="1131" alt="image" src="https://user-images.githubusercontent.com/89882525/232676659-b3408b50-0254-4fd3-b8a2-89c41d0571c0.png">
+  <br>
+* 이미지 검색
+  - 원하는 이미지를 검색 할 수 있습니다.
+  - 이미지를 클릭하면 modal 로 뜨며 키워드 태그를 확인 할 수 있습니다.
+  <br>
+  <img width="1131" alt="image" src="https://user-images.githubusercontent.com/89882525/232708657-605c4813-1502-417f-a449-25417174dec0.png">
+  <br>
+* 그 외
+  - styled-component 로 css 적용하였습니다.
+  - 기능별 component 로 분리 하였습니다.
