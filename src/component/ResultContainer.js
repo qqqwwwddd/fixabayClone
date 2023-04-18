@@ -33,11 +33,14 @@ const ResultContainer = ({ data }) => {
     return (
         <Container>
             <ResultsWrapper>
-                {data.hits?.map((imgData) => (
-                    <ImageCard key={imgData.id} imgData={imgData} />
-                ))}
-
-                <NotFoundResult />
+                {data.hits && data.hits.length !== 0 ? (
+                    data.hits?.map((imgData) => (
+                        <ImageCard key={imgData.id} imgData={imgData}/>
+                    ))
+                ): (
+                    
+                    <NotFoundResult />
+                )}
             </ResultsWrapper>
         </Container>
     );

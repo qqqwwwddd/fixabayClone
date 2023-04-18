@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import Modal from './Modal';
+import { useState } from 'react';
 const Card = styled.div`
 	margin-left: 8px;
 	margin-bottom: 8px;
@@ -15,12 +16,24 @@ const Img = styled.img`
 	border-radius: 4px;
 `;
 
-const ImageCard = ({ imgData, onClick }) => {
-	const { webformatURL, id } = imgData;
+const ImageCard = ({ imgData }) => {
+	const { webformatURL, id , tags, largeImageURL } = imgData;
+	console.log(imgData)
+	const [modal, setModal] = useState(false);
 	return (
-		<Card onClick={onClick}>
-			<Img key={id} src={webformatURL}></Img>
+		<>
+		<Card >
+			<Img key={id} src={webformatURL} onClick={() => {
+				setModal(true);
+			}}></Img>
 		</Card>
+		{ modal ? (
+		<Modal setModal={setModal} tags={tags} webformatURL={webformatURL} largeImageURL={largeImageURL}></Modal>
+		): (<></>
+		
+		)}
+
+		</>
 	);
 };
 
